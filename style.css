@@ -1,4 +1,11 @@
 /*
+font-family: 'Nosifer', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Trade Winds', cursive;
+
+
+
+
 font-family: 'Balsamiq Sans', cursive;
 font-family: 'Days One', sans-serif;
 font-family: 'Nanum Gothic', sans-serif;
@@ -7,11 +14,11 @@ html{
     height: 100%;
 }
 body{
-font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Nanum Gothic', sans-serif;
 font-size: 14px;
 color: #34495e;
 margin: 0;
-background: linear-gradient(135deg,#EC7063,#EC7063 50%,#F9E79F) no-repeat;
+background: linear-gradient(135deg,#ffffff ,#edf8ff  30%,#f8f8f8) no-repeat;
 /*вопрос по webkit*/
 }
 
@@ -48,7 +55,7 @@ p{
 .header_inner{
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 0px 0;
     border-bottom: 2px solid #D2B4DE;
     align-items: center;
 }
@@ -62,7 +69,7 @@ p{
 }
 
 .nav_link{
-    color: #ECF0F1;
+    color: #4c5152;
     text-decoration: none;
     opacity: 0.75;
     transition: opacity 0.1s linear;
@@ -82,9 +89,147 @@ p{
 
 .header img {
     border-radius: 20px;
-    width: 180px;
-    height: 60px;
+    width: 200px;
+    height: 100px;
 }
+
+.intro{
+    background-image: url(images/intro.jpg) ;
+background-size: 1400px, 400px;
+    height: 400px;
+background-repeat: no-repeat;
+    background-position: center;
+opacity: 0.9;    
+ margin-top:130px;
+ box-shadow:  0 0 12px 8px rgba(126, 118, 118, 0.6);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.intro_inner{
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro_title{
+    font-family: 'Nosifer', cursive;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+   
+    
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+
+.subtitle{
+    font-size: 38px;
+    color: rgb(255, 255, 255);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    
+    text-shadow: 1px 1px 2px rgb(189, 57, 57), 0 0 1em rgb(36, 10, 10);
+}
+
+.btn{
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 40px;
+    border-radius: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:0;
+    cursor: pointer;
+    transition: background 0.1s linear;
+}
+
+.btn--red{
+    background-color: rgb(109, 27, 27);
+}
+
+.btn--red:hover{
+    background-color: rgb(65, 8, 8);
+}
+
+
+
+
+
+
+.companies{
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 0;
+}
+  }
+
+.companies_item{
+  width: 33.33333%;
+  text-align: center;
+  padding: 0 30px;
+  margin: 25px 0;
+
+   
+}
+
+.companies_icon{
+margin-bottom: 25px;
+
+}
+
+
+.companies_title{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(4, 49, 51);
+}
+
+
+.companies_text{
+    color: rgb(7, 18, 19);
+    font-size: 14px;
+    line-height: 1.5;
+
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
