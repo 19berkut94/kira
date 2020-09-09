@@ -141,7 +141,7 @@ opacity: 0.9;
     display: inline-block;
     vertical-align: top;
     color: #fff;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
     padding: 14px 40px;
@@ -166,17 +166,17 @@ opacity: 0.9;
 
 
 .companies{
-    
+    justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
     margin: 100px 0;
 }
-  }
+  
 
 .companies_item{
-  width: 33.33333%;
+  width: 300px;
   text-align: center;
-  padding: 0 30px;
+  padding: 30px 30px;
   margin: 25px 0;
 
    
@@ -184,27 +184,48 @@ opacity: 0.9;
 
 .companies_icon{
 margin-bottom: 25px;
+border-radius: 20px;
 
+width: 300px;
 }
 
 
 .companies_title{
     text-transform: uppercase;
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
     color: rgb(4, 49, 51);
 }
 
 
-.companies_text{
+.companies_btn{
     color: rgb(7, 18, 19);
     font-size: 14px;
-    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(211, 241, 41);
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.5s background-color;
 
-   
 
 }
+
+.companies_btn:hover{
+    background-color: rgb(59, 241, 22);
+    color: rgb(114, 8, 29);
+    
+}
+
+
+
+
+
+
+
+
 
 
 
