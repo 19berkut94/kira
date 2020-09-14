@@ -10,11 +10,56 @@ font-family: 'Balsamiq Sans', cursive;
 font-family: 'Days One', sans-serif;
 font-family: 'Nanum Gothic', sans-serif;
 */
+
+
+
+@media screen  {
+    .header_logo {
+        display: none;
+    
+    }
+
+body {
+    box-sizing: border-box;
+}
+
+.header_inner {
+height: 70px;
+
+}
+
+.nav {
+margin: 0 auto;
+}
+
+.intro {
+    
+}
+
+.container {
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+
+
+
+
+    
+}
+
+
+/* _______________page____________________________ */
+
 html{
     height: 100%;
 }
 body{
     font-family: 'Nanum Gothic', sans-serif;
+    
 font-size: 14px;
 color: #34495e;
 margin: 0;
@@ -37,9 +82,10 @@ p{
 .header{
     width: 100%;
     height: 100px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    z-index: 2000;
     
 }
 
@@ -220,9 +266,46 @@ width: 300px;
 }
 
 
+.footer{
+    background-color: rgba(128, 19, 0, 0.658);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    
+    
+    
+}
+
+#bottom{
+    display: flex;
+    justify-content: space-between;
+margin-top: 15px;
+    
+    height: 50px;
+    align-items: center;
+}
+
+
+.adown{
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 14px;
+    color: ivory;
+}
+
+.copyright{
+    text-align: center;
+    text-transform: capitalize;
+}
 
 
 
+
+.container1{
+    padding-bottom: 400px;
+}
 
 
 
