@@ -27,8 +27,8 @@
 // close.addEventListener('click', function(){
 //     wind.classList.remove('opened')
 // })
-
-const button = document.querySelector('.btn')
+//_____________2 variant________main
+/*const button = document.querySelector('.btn')
 const wind = document.querySelector('.wind')
 const close = document.querySelector('.close')
 
@@ -39,9 +39,47 @@ button.addEventListener('click', function() {
 close.addEventListener('click', function() {
     wind.classList.remove('appear')
 })
+*/
 
 
 
+const butn = document.querySelector('.btn')
+const close = document.querySelector('.close')
+const wind = document.querySelector('.wind')
+
+const modal = new function() {
+
+    this.show = function() { 
+        butn.addEventListener('click', function() {
+            wind.classList.add('appear')
+})
+    },
+
+    this.hide = function() {
+        close.addEventListener('click', function() {
+            wind.classList.remove('appear')
+            
+        })
+    }
+
+}
+
+modal.show();
+modal.hide();
+
+// let form = document.querySelector('form');
+// let inputName = document.getElementById('name').value;
+// let inputMail = document.getElementById('mail').value;
+// let inputPass = document.getElementById('password').value;
+
+butsub.onclick = function() {
+let inputName = document.getElementById('name').value;
+let inputMail = document.getElementById('mail').value;
+let inputPass = document.getElementById('password').value;
+
+
+console.log(inputName, inputMail, inputPass) 
+}
 
 
 
