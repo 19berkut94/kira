@@ -6,8 +6,6 @@ const butn = document.querySelector('.btn')
 const close = document.querySelector('.close')
 const wind = document.querySelector('.wind')
 
-
-
 function Fenster(windElement) {
 
     this.show = function(anyId) {
@@ -21,20 +19,44 @@ function Fenster(windElement) {
     }
 }
 
-
-
-
 const modal = new Fenster(wind) 
 modal.show(butn)
 modal.hide(close)
  
-butsub.onclick = function() {
-let inputName = document.getElementById('name').value;
-let inputMail = document.getElementById('mail').value;
-let inputPass = document.getElementById('password').value;
 
-console.log(inputName, inputMail, inputPass) 
+
+
+
+
+
+
+
+const lol = butsub.onclick = function(){
+    let inputName = document.getElementById('name').value;
+    let inputMail = document.getElementById('mail').value;
+    let inputPass = document.getElementById('password').value;
+    
+const user = {
+    inputName,
+    inputMail,
+    inputPass,
+}    
+
+if(inputName === '' || inputMail === '' || inputPass === '') {
+     console.log('be more attentive, dude!!!') 
 }
+
+else {
+    console.log(user)
+}
+    
+}
+
+
+
+
+
+
 
 
 
