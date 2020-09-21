@@ -2,27 +2,28 @@
 
 
 
-const butn = document.querySelector('.btn')
-const close = document.querySelector('.close')
+// const butn = document.querySelector('.btn')
+// const close = document.querySelector('.close')
 const wind = document.querySelector('.wind')
 
-function Fenster(windElement) {
 
-    this.show = function(anyId) {
-        anyId.addEventListener('click', function() {
-            windElement.classList.add('appear')})
+
+function Fenster(windElement) {
+  
+
+    this.show = function() {
+        windElement.classList.add('appear')
+       
     }
-    this.hide = function(anyId) {
-        anyId.addEventListener('click', function() {
-            windElement.classList.remove('appear')
-        })
+    this.hide = function() {
+        windElement.classList.remove('appear')
     }
 }
 
 const modal = new Fenster(wind) 
-modal.show(butn)
-modal.hide(close)
- 
+
+btnOpn.onclick = function() {modal.show()}
+btnCls.onclick = function() {modal.hide()}
 
 
 
@@ -30,8 +31,7 @@ modal.hide(close)
 
 
 
-
-const lol = butsub.onclick = function(){
+const sentData = butsub.onclick = function(){
     let inputName = document.getElementById('name').value;
     let inputMail = document.getElementById('mail').value;
     let inputPass = document.getElementById('password').value;
